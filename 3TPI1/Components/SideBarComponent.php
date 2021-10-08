@@ -4,45 +4,33 @@ if ($status == "yes") {
         <div id="bg" class=<?php
                             $weather = $result['weather'][0]['main'];
                             if ($weather == "Clouds") {
-                                echo "_bg-secondary-light ";
+                                echo "_bg-primary-light ";
                             } else if ($weather == "Rain") {
-                                echo "_bg-secondary";
+                                echo "_bg-primary";
                             } else if ($weather == "Clear ") {
-                                echo "_bg-primary ";
+                                echo "_bg-secondary-light ";
+                            } else {
+                                echo "_bg-light ";
                             }
                             ?>>
             <article class="weather-container">
                 <div class="date">
                     <img src="http://openweathermap.org/img/wn/<?php echo $result['weather'][0]['icon'] ?>.png" class="date-icon" />
                     <span class="date-text mx-3 font-weight-bold text-uppercase"><?php echo date('d M', $result['dt']) ?></span>
-
                 </div>
+                <div class="state my-0  text-capitalize"><?php echo $result['weather'][0]['description'] ?></div>
                 <span class="temp">
                     <?php echo round($result['main']['temp']) ?> <span class="small-text">
-                    °C
+                        °C
                     </span>
                 </span>
+                <div class="city "><?php echo $result['name'] ?>, <?php echo $result['sys']['country'] ?></div>
 
 
 
 
 
-                <div class="weatherInfo">
-                    <div class="temperature">
-                        <span><?php echo round($result['main']['temp']) ?> C°</span>
-                    </div>
-                    <div class="description mr45">
-                        <div class="weatherCondition"><?php echo $result['weather'][0]['main'] ?></div>
-                        <div class="place"><?php echo $result['name'] ?>, <?php echo $result['sys']['country'] ?></div>
-                    </div>
-                    <div class="description">
-                        <div class="weatherCondition">Wind</div>
-                        <div class="place"><?php echo $result['wind']['speed'] ?> M/H</div>
-                    </div>
-                </div>
-                <div class="date">
-                    <?php echo date('d M', $result['dt']) ?>
-                </div>
+
             </article>
         </div>
 
