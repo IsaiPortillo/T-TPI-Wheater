@@ -56,3 +56,10 @@
   border: 1px solid var(--primary);
   letter-spacing: 2px;
 }
+
+._container-flex{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
