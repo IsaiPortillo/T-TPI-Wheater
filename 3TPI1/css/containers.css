@@ -9,6 +9,9 @@
   align-items: center;
   flex-wrap: wrap;
 }
+._side-bar-container {
+  transition: all linear 0.5s;
+}
 
 ._side-bar-container #bg {
   display: flex;
@@ -22,4 +25,34 @@
 
 .weather-container {
   text-align: center;
+}
+._input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--black);
+  padding: 10px 20px;
+  margin: 0 1rem;
+  transition: linear 0.5s;
+}
+._input:focus {
+  border-bottom: 1px solid var(--primary);
+
+}
+
+._btn {
+  border: 1px solid var(--primary);
+  padding: 1rem 2rem;
+  font-weight: 800;
+  font-size: 1rem;
+  background-color: var(--primary);
+  color: var(--black);
+  transition: linear 0.5s;
+  min-width: 15vw;
+  border-radius: 10px;
+}
+._btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--primary);
+  letter-spacing: 2px;
 }
