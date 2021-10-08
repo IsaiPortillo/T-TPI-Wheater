@@ -1,0 +1,22 @@
+.date {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.date-icon {
+  width: 3rem;
+}
+
+.date-text {
+  font-weight: 800;
+}
+
+.temp{
+    position: relative;
+    font-size: 7rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
