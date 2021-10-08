@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import "containers.css";
+@import "bg.css";
+@import "sizes.css";
+
+@import "sideBar.css";
+@import "text.css";
+:root {
+  --primary: #2ec4b6;
+  --primary-light: #cbf3f0;
+  --secondary: #ff9f1c;
+  --secondary-light: #ffbf69;
+  --black: #0d0d0d;
+  --white: #fff;
+  --red-alert: #e16464;
+  --green-alert: #92dfaf;
+  --gray-alert: #bdbdbd;
+
+  scrollbar-color: var(--primary) var(--white) !important;
+  scrollbar-width: thin !important;
+  scroll-margin: 0;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

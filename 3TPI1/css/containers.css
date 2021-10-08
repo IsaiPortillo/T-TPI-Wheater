@@ -1,0 +1,25 @@
+._main-container {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+._flex-config {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+._side-bar-container #bg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  height: 100vh;
+  width: 100%;
+}
+
+.weather-container {
+  text-align: center;
+}

@@ -1,0 +1,18 @@
+._bg-primary{
+    background-color: var(--primary);
+}
+
+._bg-secondary{
+    background-color: var(--secondary);
+}
+
+._bg-light{
+    background-color: var(--light);
+}
+
+._bg-primary-light{
+    background-color: var(--primary-light);
+}
+._bg-secondary-light{
+    background-color: var(--secondary-light);
+}
